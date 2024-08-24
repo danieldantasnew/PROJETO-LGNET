@@ -1,0 +1,15 @@
+.slides {
+  justify-content: center !important;
+}
+
+.slide img {
+  object-fit: cover;
+  max-height: 600px;
+  width: 100vw !important;
+}
+
+@media (max-width: 768px) {
+  .slide img {
+    min-height: 300px;
+  }
+}

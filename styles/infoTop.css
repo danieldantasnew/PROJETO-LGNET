@@ -1,0 +1,95 @@
+.info-top {
+  width: 100%;
+  min-height: 2.625rem;
+  background-color: var(--secondary-color-3);
+  justify-content: center !important;
+}
+
+.info-top-content-1 {
+  gap: .5rem;
+  height: 100%;
+}
+
+.info-top-content-1 > p,
+#contrast > p
+{
+  font-size: .9rem;
+  font-weight: 500;
+  color: var(--scale-gray-1);
+}
+
+.info-top-content-1 > p:hover,
+#contrast > p:hover
+{
+  text-decoration: underline;
+  color: var(--secondary-color-1);
+  cursor: pointer;
+}
+
+#contrast {
+  gap: .3rem;
+}
+
+#contrast:hover>svg path {
+  fill: var(--main-color-1);
+}
+
+#font-accessibility {
+  background-color: #04275C;
+  height: 100%;
+  padding: 2px;
+  cursor: pointer;
+}
+
+#font-accessibility p {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.625rem;
+  font-weight: 500;
+}
+
+.vertical-separator {
+  background-color: var(--scale-gray-1);
+  height: 1rem;
+  border-radius: 1px;
+  width: 1.5px;
+}
+
+.info-top-content-2 {
+  font-size: .8rem;
+  gap: .2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#acessibilityMobile {
+  display: none;
+}
+
+#acessibilityMobile::after {
+  margin-top: 4px;
+  background-image: url('../images/icons/arrowdown.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 10px;
+  content: '';
+  display: block;
+}
+
+@media (max-width: 768px) {
+  #acessibilityMobile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .3rem;
+      font-size: .8rem;
+    }
+
+    .acessibilityDesktop {
+      display: none !important;
+    }
+}

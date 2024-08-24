@@ -1,0 +1,94 @@
+header {
+  background-color: var(--main-color-2);
+  justify-content: center !important;
+}
+
+#content-header {
+  padding: .7rem .6rem;
+}
+
+#content-header img {
+  cursor: pointer;
+}
+
+.menu {
+  display: block;
+  list-style: none;
+  gap: 1rem;
+}
+
+.menu li > a {
+  font-weight: 500;
+  font-size: .95rem;
+  text-decoration: none;
+  color: var(--scale-gray-1);
+}
+
+.menu li > a:hover {
+  color: var(--main-color-1);
+  cursor: pointer;
+  transition: .3s;
+  align-items: center;
+  position: relative;
+}
+
+.menu li > a:hover::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: var(--main-color-1);
+  border-radius: 2px;
+  transition: .3s;
+  position: absolute;
+  bottom: -.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animateLi .3s forwards;
+}
+
+@keyframes animateLi {
+  to {
+    width: 45%;
+  }
+}
+
+#btn-lgnet {
+  display: flex;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--scale-gray-1);
+  font-family: var(--font);
+  font-weight: 600;
+  gap: .3rem;
+}
+
+#btn-lgnet:hover {
+  color: var(--main-color-1);
+  cursor: pointer;
+  transition: .3s;
+}
+
+#btn-lgnet:hover > svg path {
+  fill: var(--main-color-1);
+  transition: .3s;
+}
+
+  .burguer {
+    display: none;
+  }
+
+@media (max-width: 768px) {
+  .menu {
+    display: none !important;
+  }
+
+  #btn-lgnet {
+    display: none !important;
+  }
+
+  .burguer {
+    display: block;
+    cursor: pointer;
+  }
+}

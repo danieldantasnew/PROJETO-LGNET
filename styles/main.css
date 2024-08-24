@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('./infoTop.css');
+@import url('./header.css');
+@import url('./slides.css');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color-1: #FBDC00;
+  --main-color-2: #00235A;
+  --secondary-color-1: #FDCF00;
+  --secondary-color-2: #403800;
+  --secondary-color-3: #2C76AC;
+  --scale-gray-1: #ffffff;
+  --scale-gray-2: #F9F9F9;
+
+  --font: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  width: 100%;
+  height: 100%;
+  color: var(--scale-gray-1);
+  display: grid;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.content-space {
+  max-width: 87rem;
+  flex: 1;
+  height: 100%;
+  padding: 0 .6rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
