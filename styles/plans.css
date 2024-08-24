@@ -1,0 +1,244 @@
+#plans {
+  justify-content: center !important;
+  margin-bottom: 12vh; /*temporario */
+}
+
+.content-plans {
+  flex-direction: column;
+  gap: 6rem;
+  align-items: initial !important;
+}
+
+.content-top {
+  flex: 1;
+  color: var(--main-color-2);
+}
+
+.content-1 p {
+  font-size: 1.2rem;
+  margin-top: .5rem;
+  max-width: 550px;
+  font-weight: 500;
+}
+
+.content-2 {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  align-items: flex-end;
+}
+
+.content-2 p:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.content-2 p:nth-child(2)::after {
+  background-image: url('../images/icons/arrowdownBlue.svg');
+  height: 12px;
+  width: 12px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  margin-top: 4px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+}
+
+.card {
+  box-shadow: 0px 0px 6px 0px #00235a3f;
+  border-radius: 1rem;
+  text-align: left;
+  overflow: hidden;
+}
+
+.card h2 {
+  background-color: var(--main-color-2);
+  color: var(--scale-gray-1);
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  padding: .8rem 0;
+}
+
+.content-card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+.content-card div:first-child {
+  justify-content: flex-start;
+  gap: .4rem;
+}
+
+.content-card div:first-child > img {
+  background-color: var(--main-color-2 );
+  padding: .5rem;
+  border-radius: 50%;
+}
+
+.content-card div:first-child p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--scale-gray-3);
+}
+
+.info-plans {
+  margin-bottom: 1rem
+}
+
+.info-plans h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--main-color-2);
+}
+
+.info-plans p {
+  color: var(--scale-gray-25);
+  font-size: .95rem;
+}
+
+.separator {
+  margin-top: .4rem;
+  background-color: #00235a10;
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.services p {
+  font-size: 1rem;
+  color: var(--main-color-2);
+}
+
+.services ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.services ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: .5rem;
+  color: var(--scale-gray-3);
+  font-size: .9rem;
+}
+
+.services ul > li > div > strong {
+  color: var(--main-color-2);
+}
+
+.card button {
+  margin-top: 1rem;
+  border-radius: 2rem;
+  background-color: var(--main-color-2);
+  color: var(--scale-gray-1);
+  padding: 12px 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.card button:hover {
+  cursor: pointer;
+  color: var(--secondary-color-1);
+  box-shadow: 0px 0px 2px 1px var(--main-color-2), 0px 0px 2px 6px var(--main-color-1);
+  transition: .3s;
+}
+
+.card.active h2,
+.card.active .content-card div:first-child>img,
+.card.active button {
+  background-color: var(--main-color-1);
+  color: var(--secondary-color-3);
+}
+
+.card.active h3,
+.card.active .services p {
+  color: var(--secondary-color-3);
+}
+.card.active svg path{
+  fill: #2C76AC;
+}
+
+.card.active button:hover {
+  box-shadow: 0px 0px 2px 1px var(--main-color-1), 0px 0px 2px 5px var(--secondary-color-1);
+}
+
+
+@media (max-width: 768px) {
+  .content-plans {
+      flex-direction: column;
+      gap: 3rem;
+      align-items: initial !important;
+  }
+
+  .content-top {
+      flex-direction: column-reverse;
+      gap: 2rem;
+      align-items: flex-start !important;
+    }
+
+    .content-1 p {
+      font-size: 1rem;
+    }
+    
+    .content-2 {
+      align-items: flex-start;
+    }
+
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    } 
+
+    .card h2 {
+      font-size: 1rem;
+    }
+
+    .info-plans h3 {
+      font-size: 1.6rem;
+    }
+
+    .info-plans p {
+      font-size: .75rem;
+    }
+
+    .services p {
+      font-size: .8rem;
+    }
+
+    .services ul>li {
+      font-size: .75rem;
+    }
+
+    .card button {
+      padding: 10px 6px;
+      font-size: .9rem;
+    }
+}
+
+@media (max-width: 613px) {
+    .cards {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+    }
+}

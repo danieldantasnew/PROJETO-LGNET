@@ -2,6 +2,7 @@
 @import url('./infoTop.css');
 @import url('./header.css');
 @import url('./slides.css');
+@import url('./plans.css');
 
 
 * {
@@ -18,6 +19,8 @@
   --secondary-color-3: #2C76AC;
   --scale-gray-1: #ffffff;
   --scale-gray-2: #F9F9F9;
+  --scale-gray-25: #bdc6d3;
+  --scale-gray-3: #A9A9A9;
 
   --font: "Montserrat", sans-serif;
 }
@@ -26,7 +29,6 @@ body {
   font-family: var(--font);
   width: 100%;
   height: 100%;
-  color: var(--scale-gray-1);
   display: grid;
 }
 
@@ -34,22 +36,40 @@ main {
   height: 100%;
   width: 100%;
   display: grid;
+  gap: 5rem;
 }
 
+@media (max-width: 768px) {
+  main {
+    gap: 2rem;
+  }
+}
 img {
   max-height: 100%;
   max-width: 100%;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: var(--main-color-2);
+  font-weight: 700;
 }
 
 .content-space {
   max-width: 87rem;
   flex: 1;
   height: 100%;
-  padding: 0 .6rem;
+  padding: 0 2rem;
 }
 
 .flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
 }

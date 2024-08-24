@@ -63,6 +63,7 @@
   gap: .2rem;
   font-weight: 600;
   cursor: pointer;
+  color: var(--scale-gray-1);
 }
 
 #acessibilityMobile {
