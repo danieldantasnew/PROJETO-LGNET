@@ -1,0 +1,146 @@
+#chooseLG {
+  justify-content: center !important;
+  background-color: var(--scale-gray-2);
+  padding: 4rem 0rem;
+}
+
+.content-chooseLG {
+  display: grid;
+  grid-template-areas: 
+  "TITLE TITLE CARD CARD"
+  "TITLE TITLE CARD CARD"
+  "BUTTON BUTTON CARD CARD"
+  ;
+  gap: 4rem;
+  padding: 1rem 0;
+}
+
+.content-chooseLG h1 {
+  grid-area: TITLE;
+  max-width: 220px;
+  color: var(--secondary-color-2);
+}
+
+.cardsEssential {
+  grid-area: CARD;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 380px));
+  gap: 1.5rem;
+  justify-content: end;
+  align-items: center;
+}
+
+.cardEssential {
+  background-color: var(--scale-gray-1);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  color: var(--secondary-color-2);
+  border-radius: .5rem;
+  height: 100%;
+}
+
+.cardEssential h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.cardEssential p {
+  font-size: .9rem;
+  font-weight: 300;
+}
+
+.cardEssential:hover {
+  background-color: var(--main-color-2);
+  color: var(--main-color-1);
+  transition: .3s;
+}
+
+.content-chooseLG button {
+  grid-area: BUTTON;
+  background: linear-gradient(to top, var(--main-color-1), var(--secondary-color-1));
+  border: 1px solid transparent;
+  border-radius: 6rem;
+  max-width: 220px;
+  max-height: 44px;
+  color: var(--secondary-color-2);
+  font-size: .95rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.content-chooseLG button:hover {
+  cursor: pointer;
+  background: #e7be04;
+}
+
+
+@media (max-width: 960px) {
+  .content-chooseLG {
+    display: grid;
+    grid-template-areas:
+      "TITLE TITLE CARD CARD"
+      "TITLE TITLE CARD CARD"
+      "BUTTON BUTTON CARD CARD"
+    ;
+    gap: 2.4rem;
+    padding: 1rem 0;
+  }
+
+  .content-chooseLG button {
+    max-height: 48px;
+    padding: 12px 20px;
+  }
+
+}
+
+@media (max-width: 820px) {
+  .content-chooseLG {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-chooseLG h1 {
+    grid-area: TITLE;
+    max-width: initial;
+  }
+
+  .content-chooseLG button {
+    max-width: 260px;
+    max-height: 80px;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 485px) {
+  .content-chooseLG {
+    display: grid;
+    grid-template-areas: none;
+    grid-template-columns: 1fr;
+  }
+
+  .content-chooseLG h1,
+  .cardsEssential,
+  .content-chooseLG button {
+    grid-area: auto;
+  }
+
+  .cardsEssential {
+    grid-template-columns:1fr;
+    gap: 1.5rem;
+  }
+
+  .cardEssential h4 {
+    font-size: 1.3rem;
+  }
+
+  .cardEssential p {
+    font-size: .8rem;
+    font-weight: 300;
+  }
+
+  .content-chooseLG button {
+    font-size: .85rem;
+  }
+}
