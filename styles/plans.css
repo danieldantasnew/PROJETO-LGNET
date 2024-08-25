@@ -206,9 +206,9 @@
   font-size: .8rem;
 }
 
-@media (max-width: 375px) {
-  .cards {
-    grid-template-columns: repeat(4, minmax(254px, 312px));
+@media (max-width: 834px) {
+  .content-1 p {
+    font-size: 1rem;
   }
 }
 
@@ -264,8 +264,8 @@
     }
 }
 
-@media (max-width: 834px) {
-  .content-1 p {
-    font-size: 1rem;
+@media (max-width: 375px) {
+  .cards {
+    grid-template-columns: repeat(4, minmax(254px, 312px));
   }
 }
