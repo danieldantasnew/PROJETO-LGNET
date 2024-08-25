@@ -164,6 +164,10 @@
   transition: .3s;
 }
 
+.card.active {
+  position: relative;
+}
+
 .card.active h2,
 .card.active .content-card div:first-child>img,
 .card.active button {
@@ -183,6 +187,16 @@
   box-shadow: 0px 0px 2px 1px var(--main-color-1), 0px 0px 2px 5px var(--secondary-color-1);
 }
 
+.bestOffer {
+  position: absolute;
+  top: 4.3rem;
+  right: 0;
+  background-color: var(--main-color-1);
+  padding: .2rem .7rem;
+  border-radius: 0.75rem 0px 0px 0.75rem;
+  color: var(--secondary-color-3);
+  font-size: .8rem;
+}
 
 @media (max-width: 768px) {
   .content-plans {

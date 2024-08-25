@@ -39,11 +39,6 @@ main {
   gap: 5rem;
 }
 
-@media (max-width: 768px) {
-  main {
-    gap: 2rem;
-  }
-}
 img {
   max-height: 100%;
   max-width: 100%;
@@ -68,8 +63,55 @@ h1 {
   align-items: center;
 }
 
+.contactWhatsapp {
+  background-color: #2DA72F;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  padding: .8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.contactWhatsapp:hover {
+  background-color: #3cc43e;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.contactWhatsapp::after {
+  padding: .8rem;
+  background-color: #2DA72F;
+  display: block;
+  content: '';
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  animation: animationEllipse 3s cubic-bezier(0.355, .4, 0.355, .4) infinite;
+}
+
+@keyframes animationEllipse {
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
 @media (max-width: 768px) {
+  main {
+    gap: 2rem;
+  }
+
   h1 {
     font-size: 1.5rem;
+  }
+
+  .content-space {
+    padding: 0 1rem;
   }
 }

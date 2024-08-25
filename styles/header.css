@@ -79,6 +79,10 @@ header {
   }
 
 @media (max-width: 768px) {
+  #content-header {
+    padding: .7rem 1rem;
+  }
+
   .menu {
     display: none !important;
   }
