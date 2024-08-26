@@ -70,6 +70,13 @@
   }
 
   .info-app button {
-    font-size: .86rem;
+    font-size: .9rem;
+    max-width: initial;
   }
+}
+
+@media (max-width: 480px) {
+  .info-app button {
+      max-width: initial;
+    }
 }

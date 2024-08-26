@@ -114,6 +114,7 @@
   .cardsEssential {
     grid-template-columns:1fr;
     gap: 1.5rem;
+    min-height: 180px;
   }
 
   .cardEssential h4 {
@@ -126,6 +127,7 @@
   }
 
   .content-chooseLG button {
-    font-size: .85rem;
+    font-size: .9rem;
+    max-width: initial;
   }
 }
