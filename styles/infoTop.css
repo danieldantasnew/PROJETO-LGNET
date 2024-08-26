@@ -69,31 +69,24 @@
   color: var(--scale-gray-1);
 }
 
-#acessibilityMobile {
+#accessibilityMobile {
   display: none;
 }
 
-#acessibilityMobile::after {
-  margin-top: 4px;
-  background-image: url('../images/icons/arrowdown.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 10px;
-  width: 10px;
-  content: '';
-  display: block;
-}
-
 @media (max-width: 768px) {
-  #acessibilityMobile {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: .3rem;
-      font-size: .8rem;
-    }
+  #accessibilityMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+    font-size: .85rem;
+  }
 
-    .acessibilityDesktop {
-      display: none !important;
-    }
+  #accessibilityMobile:hover svg path {
+    fill: var(--main-color-1);
+  }
+
+  .acessibilityDesktop {
+    display: none !important;
+  }
 }
