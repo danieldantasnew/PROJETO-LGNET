@@ -39,6 +39,7 @@
   color: var(--secondary-color-2);
   border-radius: .5rem;
   height: 100%;
+  min-height: 180px;
 }
 
 .cardEssential h4 {
@@ -51,14 +52,16 @@
   font-weight: 300;
 }
 
-.cardEssential:hover {
-  background-color: var(--main-color-2);
-  color: var(--main-color-1);
-  transition: .3s;
-}
-
 .content-chooseLG button {
   grid-area: BUTTON;
+}
+
+@media (min-width: 980px) {
+  .cardEssential:hover {
+    background-color: var(--main-color-2);
+    color: var(--main-color-1);
+    transition: .3s;
+  }
 }
 
 @media (max-width: 960px) {
@@ -127,7 +130,9 @@
   }
 
   .content-chooseLG button {
-    font-size: .9rem;
+    font-size: 1rem;
     max-width: initial;
+    max-height: initial;
+    padding: .8rem;
   }
 }
