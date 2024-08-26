@@ -36,7 +36,7 @@
 .info-app p {
   font-size: .9rem;
   color: var(--main-color-2);
-  margin-top: .8rem;
+  margin-top: .9rem;
   line-height: 1.3rem;
   max-width: 500px;
 }
@@ -58,15 +58,15 @@
   }
 
   .info-app h5 {
-    font-size: .75rem;
+    font-size: .8rem;
   }
 
   .info-app h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .info-app p {
-    font-size: .85rem;
+    font-size: .9rem;
   }
 
   .info-app button {
