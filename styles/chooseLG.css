@@ -57,6 +57,9 @@
   transition: .3s;
 }
 
+.content-chooseLG button {
+  grid-area: BUTTON;
+}
 
 @media (max-width: 960px) {
   .content-chooseLG {

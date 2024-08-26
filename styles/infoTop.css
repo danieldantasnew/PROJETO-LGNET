@@ -2,7 +2,10 @@
   width: 100%;
   min-height: 2.625rem;
   background-color: var(--secondary-color-3);
-  justify-content: center !important;
+}
+
+#content-info-top {
+  justify-content: space-between !important;
 }
 
 .info-top-content-1 {

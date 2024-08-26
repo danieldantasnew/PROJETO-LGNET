@@ -1,0 +1,75 @@
+#appLGNET {
+  justify-content: center !important;
+}
+
+.content-app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.img-app {
+  background: linear-gradient(to left, var(--main-color-1), var(--secondary-color-1));
+  padding: 2rem;
+  border-radius: 1.4rem;
+}
+
+.info-app {
+  background-color: var(--scale-gray-2);
+  border-radius: 0 1.4rem 1.4rem 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-app h5 {
+  color: var(--secondary-color-3);
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.info-app h2 {
+  color: var(--main-color-2);
+  font-weight: 600;
+}
+
+.info-app p {
+  font-size: .9rem;
+  color: var(--main-color-2);
+  margin-top: .8rem;
+  line-height: 1.3rem;
+  max-width: 500px;
+}
+
+.info-app button {
+  padding: 8px 16px;
+}
+
+@media (max-width: 767px) {
+  .content-app {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-app {
+    background-color: var(--scale-gray-2);
+    border-radius: 0 0 1.4rem 1.4rem;
+    padding: 1rem;
+  }
+
+  .info-app h5 {
+    font-size: .7rem;
+  }
+
+  .info-app h2 {
+    font-size: 1.4rem;
+  }
+
+  .info-app p {
+    font-size: .76rem;
+  }
+
+  .info-app button {
+    font-size: .86rem;
+  }
+}

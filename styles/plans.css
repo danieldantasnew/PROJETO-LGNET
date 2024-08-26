@@ -1,5 +1,4 @@
 #plans {
-  justify-content: center !important;
   overflow-y: hidden;
   overflow-x: auto;
 }
@@ -14,6 +13,7 @@
 .content-top {
   flex: 1;
   color: var(--main-color-2);
+  justify-content: space-between !important;
 }
 
 .content-1 p {

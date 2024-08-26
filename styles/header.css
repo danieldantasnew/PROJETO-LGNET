@@ -1,11 +1,11 @@
 header {
   background-color: var(--main-color-2);
-  justify-content: center !important;
 }
 
 #content-header {
   padding-top: .7rem;
   padding-bottom: .7rem;
+  justify-content: space-between !important;
 }
 
 #content-header img {
@@ -13,9 +13,9 @@ header {
 }
 
 .menu {
-  display: block;
   list-style: none;
   gap: 1rem;
+  
 }
 
 .menu li > a {
