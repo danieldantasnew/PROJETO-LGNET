@@ -71,27 +71,35 @@
   border-radius: 50%;
 }
 
+.cardSelfService:hover {
+  background-color: var(--main-color-1);
+}
+
 .cardSelfService:hover,
 .cardSelfService:hover p {
-  background-color: var(--main-color-1);
   color: var(--secondary-color-2);
   cursor: pointer;
+  transition: .3s;
 }
 
 .cardSelfService:hover svg path {
   fill: var(--secondary-color-2);
+  transition: .3s;
 }
 
 .cardSelfService:hover .separator {
   background-color: #d6bd419d;
+  transition: .3s;
 }
 
 .cardSelfService:hover .arrow {
   background-color: var(--secondary-color-2);
+  transition: .3s;
 }
 
 .cardSelfService:hover .arrow svg path {
   fill: var(--main-color-1);
+  transition: .3s;
 }
 
 @media (max-width: 980px) {
